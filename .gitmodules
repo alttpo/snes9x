@@ -16,3 +16,6 @@
 [submodule "external/cubeb"]
 	path = external/cubeb
 	url = https://github.com/mozilla/cubeb.git
+[submodule "trex"]
+	path = external/trex
+	url = git@github.com:alttpo/trex.git
