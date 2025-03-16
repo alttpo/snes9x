@@ -2582,6 +2582,10 @@ static void Initialize (void)
 
     }
 
+#ifdef USE_REX
+	S9xRexInit();
+#endif
+
 	frzselecting = false;
 	[s9xView updatePauseOverlay];
 

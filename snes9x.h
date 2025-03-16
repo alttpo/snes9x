@@ -14,6 +14,9 @@
 #include "port.h"
 #include "65c816.h"
 #include "messages.h"
+#ifdef USE_REX
+#include "trex.h"
+#endif
 
 #ifdef ZLIB
 #include <zlib.h>
@@ -344,5 +347,12 @@ extern struct SCPUState			CPU;
 extern struct STimings			Timings;
 extern struct SSNESGameFixes	SNESGameFixes;
 extern char						String[513];
+
+#ifdef USE_REX
+extern struct trex_context rexctx;
+
+void S9xRexInit(void);
+void S9xRexExec(void);
+#endif
 
 #endif

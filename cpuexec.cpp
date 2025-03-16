@@ -16,6 +16,9 @@
 #include "debug.h"
 #include "missing.h"
 #endif
+#ifdef USE_REX
+#include "trex.h"
+#endif
 
 static inline void S9xReschedule (void);
 
@@ -173,6 +176,10 @@ void S9xMainLoop (void)
 
 		if (Settings.SA1)
 			S9xSA1MainLoop();
+
+#ifdef USE_REX
+		S9xRexExec();
+#endif
 	}
 
 	S9xPackStatus();

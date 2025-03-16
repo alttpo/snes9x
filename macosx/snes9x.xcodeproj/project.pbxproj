@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16CC80272D87386100111609 /* rex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80262D87385E00111609 /* rex.cpp */; };
+		16CC80522D873E3F00111609 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC804E2D873E3F00111609 /* trex_exec.c */; };
+		16CC80532D873E3F00111609 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80512D873E3F00111609 /* trex_verify.c */; };
+		16CC80542D873E3F00111609 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC804E2D873E3F00111609 /* trex_exec.c */; };
+		16CC80552D873E3F00111609 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80512D873E3F00111609 /* trex_verify.c */; };
+		16CC80562D873E3F00111609 /* trex_opcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC80502D873E3F00111609 /* trex_opcodes.h */; };
+		16CC80572D873E3F00111609 /* trex_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC804F2D873E3F00111609 /* trex_impl.h */; };
+		16CC80582D873E3F00111609 /* trex.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC804D2D873E3F00111609 /* trex.h */; };
 		3000A9CF23418799007DC37F /* logo_freeze.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D300B0A260A3200BDACCC /* logo_freeze.png */; };
 		3000A9D02341879B007DC37F /* logo_defrost.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D300C0A260A3200BDACCC /* logo_defrost.png */; };
 		3000A9D123418852007DC37F /* freeze_defrost.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EA85C3560B4ECBD900F5F9C9 /* freeze_defrost.aiff */; };
@@ -268,6 +276,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16CC80262D87385E00111609 /* rex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rex.cpp; sourceTree = "<group>"; };
+		16CC804D2D873E3F00111609 /* trex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex.h; path = ../external/trex/trex.h; sourceTree = SOURCE_ROOT; };
+		16CC804E2D873E3F00111609 /* trex_exec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_exec.c; path = ../external/trex/trex_exec.c; sourceTree = SOURCE_ROOT; };
+		16CC804F2D873E3F00111609 /* trex_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_impl.h; path = ../external/trex/trex_impl.h; sourceTree = SOURCE_ROOT; };
+		16CC80502D873E3F00111609 /* trex_opcodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_opcodes.h; path = ../external/trex/trex_opcodes.h; sourceTree = SOURCE_ROOT; };
+		16CC80512D873E3F00111609 /* trex_verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_verify.c; path = ../external/trex/trex_verify.c; sourceTree = SOURCE_ROOT; };
 		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		302EEC9A22DAD0AB006D1502 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		302EEC9B22DAD0AB006D1502 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -607,6 +621,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16CC80592D873E4500111609 /* trex */ = {
+			isa = PBXGroup;
+			children = (
+				16CC804D2D873E3F00111609 /* trex.h */,
+				16CC804E2D873E3F00111609 /* trex_exec.c */,
+				16CC804F2D873E3F00111609 /* trex_impl.h */,
+				16CC80502D873E3F00111609 /* trex_opcodes.h */,
+				16CC80512D873E3F00111609 /* trex_verify.c */,
+			);
+			path = trex;
+			sourceTree = "<group>";
+		};
 		195DF8C9FE9D4F0611CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +661,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE061540526CCB900A80003 /* snes9x */,
+				16CC80592D873E4500111609 /* trex */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -886,6 +913,7 @@
 		EAE061540526CCB900A80003 /* snes9x */ = {
 			isa = PBXGroup;
 			children = (
+				16CC80262D87385E00111609 /* rex.cpp */,
 				EAE0615A0526CCB900A80003 /* 65c816.h */,
 				BF0B39791FA5792F002B04D3 /* apu */,
 				85FEF90620DDB15B00C038E9 /* bml.cpp */,
@@ -1150,6 +1178,9 @@
 				30D15DD622CE6BC9005BC352 /* aribitcd.h in Headers */,
 				30D15DD722CE6BC9005BC352 /* ariconst.h in Headers */,
 				30CF849727AEFD4F002B37A9 /* mac-cheat.h in Headers */,
+				16CC80562D873E3F00111609 /* trex_opcodes.h in Headers */,
+				16CC80572D873E3F00111609 /* trex_impl.h in Headers */,
+				16CC80582D873E3F00111609 /* trex.h in Headers */,
 				30D15DD822CE6BC9005BC352 /* ariprice.h in Headers */,
 				30D15DD922CE6BC9005BC352 /* btreecd.h in Headers */,
 				30D15DDA22CE6BC9005BC352 /* crc32.h in Headers */,
@@ -1308,6 +1339,8 @@
 				306937E82636365100007ABB /* S9xFilesPreferencesViewController.m in Sources */,
 				30F72BE929CF588B000235A8 /* S9xOpenMultipleViewController.m in Sources */,
 				30F72A8E29CCF8E2000235A8 /* S9xHexNumberFormatter.m in Sources */,
+				16CC80522D873E3F00111609 /* trex_exec.c in Sources */,
+				16CC80532D873E3F00111609 /* trex_verify.c in Sources */,
 				30F727EE29C7B365000235A8 /* S9xCheatFinderViewController.m in Sources */,
 				30CF849C27AF0C61002B37A9 /* S9xCheatEditViewController.m in Sources */,
 				306937D02636253900007ABB /* S9xPreferencesTabViewController.m in Sources */,
@@ -1350,6 +1383,7 @@
 				30D15D3022CE6B74005BC352 /* cheats.cpp in Sources */,
 				30D15D3122CE6B74005BC352 /* cheats2.cpp in Sources */,
 				30D15D3222CE6B74005BC352 /* clip.cpp in Sources */,
+				16CC80272D87386100111609 /* rex.cpp in Sources */,
 				30D15D3322CE6B74005BC352 /* controls.cpp in Sources */,
 				3082C4262378BCE80081CA7C /* FakeResources.c in Sources */,
 				30D15D3422CE6B74005BC352 /* cpu.cpp in Sources */,
@@ -1397,6 +1431,8 @@
 				30D15D6622CE6B74005BC352 /* smp_state.cpp in Sources */,
 				30D15D7022CE6B75005BC352 /* 2xsai.cpp in Sources */,
 				30D15D7122CE6B75005BC352 /* blit.cpp in Sources */,
+				16CC80542D873E3F00111609 /* trex_exec.c in Sources */,
+				16CC80552D873E3F00111609 /* trex_verify.c in Sources */,
 				30D15D7222CE6B75005BC352 /* epx.cpp in Sources */,
 				30D15D7322CE6B75005BC352 /* hq2x.cpp in Sources */,
 				30D15D7422CE6B75005BC352 /* snes_ntsc.c in Sources */,
@@ -1499,7 +1535,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Snes9x/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.63;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1546,7 +1585,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Snes9x/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.63;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1593,7 +1635,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "snes9x framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1652,7 +1698,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "snes9x framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1696,14 +1746,20 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_REX=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = external/trex;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
-				USER_HEADER_SEARCH_PATHS = "../apu/bapu ..";
+				USER_HEADER_SEARCH_PATHS = (
+					../apu/bapu,
+					..,
+				);
 			};
 			name = Debug;
 		};
@@ -1731,13 +1787,19 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "USE_REX=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				USER_HEADER_SEARCH_PATHS = "../apu/bapu ..";
+				HEADER_SEARCH_PATHS = external/trex;
+				NEW_SETTING = "";
+				USER_HEADER_SEARCH_PATHS = (
+					../apu/bapu,
+					..,
+				);
 			};
 			name = Release;
 		};
