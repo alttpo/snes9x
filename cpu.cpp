@@ -102,7 +102,7 @@ void S9xReset (void)
 	memset(Memory.VRAM, 0x00, sizeof(Memory.VRAM));
 	memset(Memory.FillRAM, 0, 0x8000);
 #ifdef USE_REX
-	memset(Memory.REX_2C00, 0, 0x8000);
+	memset(Memory.REX_2C00, 0, 0x200);
 #endif
 
 	S9xResetBSX();
