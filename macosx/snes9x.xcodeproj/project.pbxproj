@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16097BB82D908D96002DAA17 /* rexnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16097BB72D908D90002DAA17 /* rexnet.cpp */; };
+		16097BBA2D909FA4002DAA17 /* rexnet.h in Headers */ = {isa = PBXBuildFile; fileRef = 16097BB92D909FA2002DAA17 /* rexnet.h */; };
 		16CC80272D87386100111609 /* rex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80262D87385E00111609 /* rex.cpp */; };
 		16CC80522D873E3F00111609 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC804E2D873E3F00111609 /* trex_exec.c */; };
 		16CC80532D873E3F00111609 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80512D873E3F00111609 /* trex_verify.c */; };
@@ -276,6 +278,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16097BB72D908D90002DAA17 /* rexnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rexnet.cpp; sourceTree = "<group>"; };
+		16097BB92D909FA2002DAA17 /* rexnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rexnet.h; sourceTree = "<group>"; };
 		16CC80262D87385E00111609 /* rex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rex.cpp; sourceTree = "<group>"; };
 		16CC804D2D873E3F00111609 /* trex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex.h; path = ../external/trex/trex.h; sourceTree = SOURCE_ROOT; };
 		16CC804E2D873E3F00111609 /* trex_exec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_exec.c; path = ../external/trex/trex_exec.c; sourceTree = SOURCE_ROOT; };
@@ -913,6 +917,8 @@
 		EAE061540526CCB900A80003 /* snes9x */ = {
 			isa = PBXGroup;
 			children = (
+				16097BB92D909FA2002DAA17 /* rexnet.h */,
+				16097BB72D908D90002DAA17 /* rexnet.cpp */,
 				16CC80262D87385E00111609 /* rex.cpp */,
 				EAE0615A0526CCB900A80003 /* 65c816.h */,
 				BF0B39791FA5792F002B04D3 /* apu */,
@@ -1155,6 +1161,7 @@
 				30D15DBE22CE6BC9005BC352 /* spc7110.h in Headers */,
 				30D15DC122CE6BC9005BC352 /* srtc.h in Headers */,
 				30D15DC322CE6BC9005BC352 /* tile.h in Headers */,
+				16097BBA2D909FA4002DAA17 /* rexnet.h in Headers */,
 				30D15DC422CE6BC9005BC352 /* apu.h in Headers */,
 				30D15DC522CE6BC9005BC352 /* blargg_common.h in Headers */,
 				3082C4232378BCE80081CA7C /* FakeHandles.h in Headers */,
@@ -1362,6 +1369,7 @@
 				307C862122D29E29001B879E /* mac-audio.mm in Sources */,
 				307C862222D29E29001B879E /* mac-cart.mm in Sources */,
 				307C862322D29E29001B879E /* mac-cheat.mm in Sources */,
+				16097BB82D908D96002DAA17 /* rexnet.cpp in Sources */,
 				307C862622D29E29001B879E /* mac-cocoatools.mm in Sources */,
 				307C862922D29E29001B879E /* mac-gworld.mm in Sources */,
 				307C862A22D29E29001B879E /* mac-keyboard.mm in Sources */,

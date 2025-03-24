@@ -349,8 +349,6 @@ extern struct SSNESGameFixes	SNESGameFixes;
 extern char						String[513];
 
 #ifdef USE_REX
-extern struct trex_context rexctx;
-
 void S9xRexInit(void);
 void S9xRexExec(void);
 #endif
