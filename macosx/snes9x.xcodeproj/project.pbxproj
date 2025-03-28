@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16097BB82D908D96002DAA17 /* rexnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16097BB72D908D90002DAA17 /* rexnet.cpp */; };
-		16097BBA2D909FA4002DAA17 /* rexnet.h in Headers */ = {isa = PBXBuildFile; fileRef = 16097BB92D909FA2002DAA17 /* rexnet.h */; };
-		16CC80272D87386100111609 /* rex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80262D87385E00111609 /* rex.cpp */; };
-		16CC80522D873E3F00111609 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC804E2D873E3F00111609 /* trex_exec.c */; };
-		16CC80532D873E3F00111609 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80512D873E3F00111609 /* trex_verify.c */; };
-		16CC80542D873E3F00111609 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC804E2D873E3F00111609 /* trex_exec.c */; };
-		16CC80552D873E3F00111609 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16CC80512D873E3F00111609 /* trex_verify.c */; };
-		16CC80562D873E3F00111609 /* trex_opcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC80502D873E3F00111609 /* trex_opcodes.h */; };
-		16CC80572D873E3F00111609 /* trex_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC804F2D873E3F00111609 /* trex_impl.h */; };
-		16CC80582D873E3F00111609 /* trex.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CC804D2D873E3F00111609 /* trex.h */; };
+		16097BC02D962418002DAA17 /* trex.h in Headers */ = {isa = PBXBuildFile; fileRef = 16097BBB2D962417002DAA17 /* trex.h */; };
+		16097BC12D962418002DAA17 /* trex_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 16097BBC2D962418002DAA17 /* trex_impl.h */; };
+		16097BC22D962418002DAA17 /* trex_opcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 16097BBF2D962418002DAA17 /* trex_opcodes.h */; };
+		16097BC72D962751002DAA17 /* rex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16097BC62D9626E6002DAA17 /* rex.cpp */; };
+		16097BC82D962751002DAA17 /* rexnet.h in Sources */ = {isa = PBXBuildFile; fileRef = 16097BC52D962589002DAA17 /* rexnet.h */; };
+		16097BC92D962751002DAA17 /* trex.h in Sources */ = {isa = PBXBuildFile; fileRef = 16097BBB2D962417002DAA17 /* trex.h */; };
+		16097BCA2D962751002DAA17 /* trex_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 16097BBD2D962418002DAA17 /* trex_exec.c */; };
+		16097BCB2D962751002DAA17 /* trex_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 16097BBE2D962418002DAA17 /* trex_verify.c */; };
+		16097BCD2D9627AC002DAA17 /* rexnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16097BCC2D9627AC002DAA17 /* rexnet.cpp */; };
 		3000A9CF23418799007DC37F /* logo_freeze.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D300B0A260A3200BDACCC /* logo_freeze.png */; };
 		3000A9D02341879B007DC37F /* logo_defrost.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D300C0A260A3200BDACCC /* logo_defrost.png */; };
 		3000A9D123418852007DC37F /* freeze_defrost.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EA85C3560B4ECBD900F5F9C9 /* freeze_defrost.aiff */; };
@@ -278,14 +277,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		16097BB72D908D90002DAA17 /* rexnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rexnet.cpp; sourceTree = "<group>"; };
-		16097BB92D909FA2002DAA17 /* rexnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rexnet.h; sourceTree = "<group>"; };
-		16CC80262D87385E00111609 /* rex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rex.cpp; sourceTree = "<group>"; };
-		16CC804D2D873E3F00111609 /* trex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex.h; path = ../external/trex/trex.h; sourceTree = SOURCE_ROOT; };
-		16CC804E2D873E3F00111609 /* trex_exec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_exec.c; path = ../external/trex/trex_exec.c; sourceTree = SOURCE_ROOT; };
-		16CC804F2D873E3F00111609 /* trex_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_impl.h; path = ../external/trex/trex_impl.h; sourceTree = SOURCE_ROOT; };
-		16CC80502D873E3F00111609 /* trex_opcodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_opcodes.h; path = ../external/trex/trex_opcodes.h; sourceTree = SOURCE_ROOT; };
-		16CC80512D873E3F00111609 /* trex_verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_verify.c; path = ../external/trex/trex_verify.c; sourceTree = SOURCE_ROOT; };
+		16097BBB2D962417002DAA17 /* trex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex.h; path = external/trex/trex.h; sourceTree = "<group>"; };
+		16097BBC2D962418002DAA17 /* trex_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_impl.h; path = external/trex/trex_impl.h; sourceTree = "<group>"; };
+		16097BBD2D962418002DAA17 /* trex_exec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_exec.c; path = external/trex/trex_exec.c; sourceTree = "<group>"; };
+		16097BBE2D962418002DAA17 /* trex_verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = trex_verify.c; path = external/trex/trex_verify.c; sourceTree = "<group>"; };
+		16097BBF2D962418002DAA17 /* trex_opcodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trex_opcodes.h; path = external/trex/trex_opcodes.h; sourceTree = "<group>"; };
+		16097BC52D962589002DAA17 /* rexnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rexnet.h; sourceTree = "<group>"; };
+		16097BC62D9626E6002DAA17 /* rex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rex.cpp; sourceTree = "<group>"; };
+		16097BCC2D9627AC002DAA17 /* rexnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rexnet.cpp; sourceTree = "<group>"; };
 		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		302EEC9A22DAD0AB006D1502 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		302EEC9B22DAD0AB006D1502 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -625,18 +624,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16CC80592D873E4500111609 /* trex */ = {
-			isa = PBXGroup;
-			children = (
-				16CC804D2D873E3F00111609 /* trex.h */,
-				16CC804E2D873E3F00111609 /* trex_exec.c */,
-				16CC804F2D873E3F00111609 /* trex_impl.h */,
-				16CC80502D873E3F00111609 /* trex_opcodes.h */,
-				16CC80512D873E3F00111609 /* trex_verify.c */,
-			);
-			path = trex;
-			sourceTree = "<group>";
-		};
 		195DF8C9FE9D4F0611CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,7 +652,6 @@
 			isa = PBXGroup;
 			children = (
 				EAE061540526CCB900A80003 /* snes9x */,
-				16CC80592D873E4500111609 /* trex */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -917,9 +903,14 @@
 		EAE061540526CCB900A80003 /* snes9x */ = {
 			isa = PBXGroup;
 			children = (
-				16097BB92D909FA2002DAA17 /* rexnet.h */,
-				16097BB72D908D90002DAA17 /* rexnet.cpp */,
-				16CC80262D87385E00111609 /* rex.cpp */,
+				16097BC62D9626E6002DAA17 /* rex.cpp */,
+				16097BCC2D9627AC002DAA17 /* rexnet.cpp */,
+				16097BC52D962589002DAA17 /* rexnet.h */,
+				16097BBB2D962417002DAA17 /* trex.h */,
+				16097BBD2D962418002DAA17 /* trex_exec.c */,
+				16097BBC2D962418002DAA17 /* trex_impl.h */,
+				16097BBF2D962418002DAA17 /* trex_opcodes.h */,
+				16097BBE2D962418002DAA17 /* trex_verify.c */,
 				EAE0615A0526CCB900A80003 /* 65c816.h */,
 				BF0B39791FA5792F002B04D3 /* apu */,
 				85FEF90620DDB15B00C038E9 /* bml.cpp */,
@@ -1117,6 +1108,9 @@
 				30D15CF322CE6B5A005BC352 /* snes9x_framework.h in Headers */,
 				30714729230E387700917F82 /* mac-os.h in Headers */,
 				30D15D9522CE6BC9005BC352 /* sha256.h in Headers */,
+				16097BC02D962418002DAA17 /* trex.h in Headers */,
+				16097BC12D962418002DAA17 /* trex_impl.h in Headers */,
+				16097BC22D962418002DAA17 /* trex_opcodes.h in Headers */,
 				30D15D9622CE6BC9005BC352 /* bml.h in Headers */,
 				30D15D9722CE6BC9005BC352 /* 65c816.h in Headers */,
 				307C861422D27C53001B879E /* tileimpl.h in Headers */,
@@ -1161,7 +1155,6 @@
 				30D15DBE22CE6BC9005BC352 /* spc7110.h in Headers */,
 				30D15DC122CE6BC9005BC352 /* srtc.h in Headers */,
 				30D15DC322CE6BC9005BC352 /* tile.h in Headers */,
-				16097BBA2D909FA4002DAA17 /* rexnet.h in Headers */,
 				30D15DC422CE6BC9005BC352 /* apu.h in Headers */,
 				30D15DC522CE6BC9005BC352 /* blargg_common.h in Headers */,
 				3082C4232378BCE80081CA7C /* FakeHandles.h in Headers */,
@@ -1185,9 +1178,6 @@
 				30D15DD622CE6BC9005BC352 /* aribitcd.h in Headers */,
 				30D15DD722CE6BC9005BC352 /* ariconst.h in Headers */,
 				30CF849727AEFD4F002B37A9 /* mac-cheat.h in Headers */,
-				16CC80562D873E3F00111609 /* trex_opcodes.h in Headers */,
-				16CC80572D873E3F00111609 /* trex_impl.h in Headers */,
-				16CC80582D873E3F00111609 /* trex.h in Headers */,
 				30D15DD822CE6BC9005BC352 /* ariprice.h in Headers */,
 				30D15DD922CE6BC9005BC352 /* btreecd.h in Headers */,
 				30D15DDA22CE6BC9005BC352 /* crc32.h in Headers */,
@@ -1346,8 +1336,6 @@
 				306937E82636365100007ABB /* S9xFilesPreferencesViewController.m in Sources */,
 				30F72BE929CF588B000235A8 /* S9xOpenMultipleViewController.m in Sources */,
 				30F72A8E29CCF8E2000235A8 /* S9xHexNumberFormatter.m in Sources */,
-				16CC80522D873E3F00111609 /* trex_exec.c in Sources */,
-				16CC80532D873E3F00111609 /* trex_verify.c in Sources */,
 				30F727EE29C7B365000235A8 /* S9xCheatFinderViewController.m in Sources */,
 				30CF849C27AF0C61002B37A9 /* S9xCheatEditViewController.m in Sources */,
 				306937D02636253900007ABB /* S9xPreferencesTabViewController.m in Sources */,
@@ -1366,10 +1354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16097BCD2D9627AC002DAA17 /* rexnet.cpp in Sources */,
+				16097BC72D962751002DAA17 /* rex.cpp in Sources */,
+				16097BC82D962751002DAA17 /* rexnet.h in Sources */,
+				16097BC92D962751002DAA17 /* trex.h in Sources */,
+				16097BCA2D962751002DAA17 /* trex_exec.c in Sources */,
+				16097BCB2D962751002DAA17 /* trex_verify.c in Sources */,
 				307C862122D29E29001B879E /* mac-audio.mm in Sources */,
 				307C862222D29E29001B879E /* mac-cart.mm in Sources */,
 				307C862322D29E29001B879E /* mac-cheat.mm in Sources */,
-				16097BB82D908D96002DAA17 /* rexnet.cpp in Sources */,
 				307C862622D29E29001B879E /* mac-cocoatools.mm in Sources */,
 				307C862922D29E29001B879E /* mac-gworld.mm in Sources */,
 				307C862A22D29E29001B879E /* mac-keyboard.mm in Sources */,
@@ -1391,7 +1384,6 @@
 				30D15D3022CE6B74005BC352 /* cheats.cpp in Sources */,
 				30D15D3122CE6B74005BC352 /* cheats2.cpp in Sources */,
 				30D15D3222CE6B74005BC352 /* clip.cpp in Sources */,
-				16CC80272D87386100111609 /* rex.cpp in Sources */,
 				30D15D3322CE6B74005BC352 /* controls.cpp in Sources */,
 				3082C4262378BCE80081CA7C /* FakeResources.c in Sources */,
 				30D15D3422CE6B74005BC352 /* cpu.cpp in Sources */,
@@ -1439,8 +1431,6 @@
 				30D15D6622CE6B74005BC352 /* smp_state.cpp in Sources */,
 				30D15D7022CE6B75005BC352 /* 2xsai.cpp in Sources */,
 				30D15D7122CE6B75005BC352 /* blit.cpp in Sources */,
-				16CC80542D873E3F00111609 /* trex_exec.c in Sources */,
-				16CC80552D873E3F00111609 /* trex_verify.c in Sources */,
 				30D15D7222CE6B75005BC352 /* epx.cpp in Sources */,
 				30D15D7322CE6B75005BC352 /* hq2x.cpp in Sources */,
 				30D15D7422CE6B75005BC352 /* snes_ntsc.c in Sources */,

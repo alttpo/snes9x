@@ -5,10 +5,8 @@
 #include "snes9x.h"
 #include "rexnet.h"
 
-extern "C" {
 #include "trex.h"
 #include "trex_opcodes.h"
-}
 
 #define MAX_CLIENTS 4
 
@@ -55,6 +53,8 @@ void S9xRexInit(void) {
 
 	th_net = std::thread(S9xRexNetThread);
 }
+
+char rcvbuf[65536];
 
 // on network thread:
 void S9xRexNetThread(void) {
@@ -140,7 +140,7 @@ void S9xRexNetThread(void) {
 			if (!FD_ISSET(sd, &readfds)) continue;
 
 			ssize_t n;
-			if (!rexnet_recv(sd, buf, 0, 1024, n)) {
+			if (!rexnet_recv(sd, rcvbuf, 0, sizeof(rcvbuf), n)) {
 				rexnet_socket_close(sd);
 				client_fds[i] = 0;
 				continue;
