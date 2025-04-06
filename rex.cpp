@@ -21,45 +21,12 @@ struct trex_sm *machines_lkup[MAX_CLIENTS];
 std::thread th_net;
 bool rexnet_running = false;
 
-void S9xRexNetThread(void);
-
-void S9xRexInit(void) {
-	// initialize trex context to execute state machines with:
-	trex_context_init(&ctx, nullptr, stack, 32);
-
-	ctx.machines = machines_lkup;
-	ctx.machines_count = 1;
-
-	machines[0].handlers_count = 1;
-	handlers[0][0].pc_start = &code[0];
-
-	code[0] = PSH1;
-	code[1] = 0;
-
-	for (int i = 0; i < 4; i++) {
-		machines_lkup[i] = &machines[i];
-		trex_sm_init(
-			&ctx,
-			&machines[i],
-			0,             // iterations
-			handlers[i],   // handlers
-			0,             // handlers_count
-			0,             // syscalls
-			0,             // syscalls_count
-			locals[i],     // locals
-			16             // locals_count
-		);
-	}
-
-	th_net = std::thread(S9xRexNetThread);
-}
-
 char rcvbuf[65536];
 
 // on network thread:
 void S9xRexNetThread(void) {
-	int server_fd;
-	int client_fds[MAX_CLIENTS];
+	int server_fd = -1;
+	int client_fds[MAX_CLIENTS] = {};
 	struct timeval timeout;
 	fd_set readfds;
 	
@@ -155,6 +122,37 @@ void S9xRexNetThread(void) {
 // on emulator thread:
 void S9xRexExec(void) {
 	trex_exec(&ctx, 25);
+}
+
+void S9xRexInit(void) {
+	// initialize trex context to execute state machines with:
+	trex_context_init(&ctx, nullptr, stack, 32);
+
+	ctx.machines = machines_lkup;
+	ctx.machines_count = 1;
+
+	machines[0].handlers_count = 1;
+	handlers[0][0].pc_start = &code[0];
+
+	code[0] = PSH1;
+	code[1] = 0;
+
+	for (int i = 0; i < 4; i++) {
+		machines_lkup[i] = &machines[i];
+		trex_sm_init(
+			&ctx,
+			&machines[i],
+			0,             // iterations
+			handlers[i],   // handlers
+			0,             // handlers_count
+			0,             // syscalls
+			0,             // syscalls_count
+			locals[i],     // locals
+			16             // locals_count
+		);
+	}
+
+	th_net = std::thread(S9xRexNetThread);
 }
 
 #endif
